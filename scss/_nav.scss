@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+
+  a {
+    text-decoration: none;
+    color: $primary-des-blue;
+  }
+
+  img {
+    width: 9rem;
+  }
+
+  .nav--list {
+    list-style: none;
+    display: flex;
+    font-size: 1.3rem;
+    color: $primary-dark-blue;
+
+    li {
+      padding-left: 2.4rem;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  nav {
+    padding: 6rem;
+
+    img {
+      width: 15rem;
+    }
+
+    .nav--list {
+      font-size: 1.6rem;
+
+      li {
+        padding-left: 5rem;
+      }
+    }
+  }
+}

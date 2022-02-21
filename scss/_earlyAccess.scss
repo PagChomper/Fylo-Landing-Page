@@ -1,0 +1,81 @@
+.early {
+  background: $primary-des-blue;
+  padding: 3rem 4.5rem 6rem 4.5rem;
+  text-align: center;
+
+  &--title {
+    color: #ffffff;
+    font-size: 1.7rem;
+  }
+
+  &--text {
+    color: $neutral-light-gray-blue;
+    font-size: 1.4rem;
+    line-height: 1.8rem;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &--input {
+    margin: 0 3rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    &::placeholder {
+      color: $neutral-light-gray;
+    }
+  }
+  &--button {
+    margin: 0 3rem;
+    border: none;
+    background: $accent-bright-blue;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-top: 0.7rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .early {
+    padding: 4rem 5.2rem;
+    text-align: left;
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &--input {
+      padding: 1.4rem;
+      margin-left: 0;
+    }
+
+    &--button {
+      margin-left: 0;
+      width: 17rem;
+      padding: 1.4rem;
+    }
+
+    &--title {
+      margin-top: 0;
+      font-size: 2.6rem;
+      margin-bottom: 0;
+    }
+    .grid--1x2 {
+      display: grid;
+      column-gap: 0rem;
+    }
+
+    .grid--left {
+      margin-right: 20rem;
+    }
+
+    .grid--right {
+      align-self: center;
+    }
+  }
+}
